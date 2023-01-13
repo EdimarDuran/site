@@ -1,0 +1,112 @@
+/* Reseta o css ou seja configuração para todos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color:#5E2129 ;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+
+    
+}
+.sidebar-img {
+    text-align: center;
+}
+
+.sidebar-img img{
+    width: 80%;
+    border: 8px solid #3f171c;
+    border-radius: 50%;
+
+
+}
+
+.sidebar-menu{
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    
+}
+
+.sidebar-menu a{
+    font-size: 19px;
+    color: #EDECCE;
+    opacity: 0.4;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.sidebar-menu a.selected{
+    opacity: 1;
+}
+
+.sidebar-menu a:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    background-color: #3f171c;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 4%;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: #eeeee5;
+}
+
+section.descricao{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+section.descricao h2{
+    color:#475b66;
+    font-size: 46px;
+}
+
+section.descricao p{
+    color:#7492A1;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+
+.icons-social img{
+    margin: 20px 10px;
+    background-color: #686e71;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: inline-block;
+
+
+
+}
